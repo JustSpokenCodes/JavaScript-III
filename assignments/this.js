@@ -20,12 +20,30 @@ doThis('wash up');
 const People = {
     greeting: 'What Up!',
     sayHi: function (name){
-        console.log(`${this.greeting} this is ${name} creepin in yo ear and messing with your mind with sound`);
+        console.log(`${this.greeting} This is ${name} creepin in yo ear and messing with your mind with sound`);
         console.log(this);
     }
 };
 People.sayHi('Professor K');
 
 // code example for New Binding
-
+// function JetSet (greeter){
+//     this.prepare = 'Yo! Are. You. Ready';
+//     this.greeter = greeter;
+//     this.speak = function(){
+//         console.log(this.prepare + this.greeter);
+//         console.log(this);
+//     }
+// };
+// const gum = new greeter ('Yo-Yo');
+// const yoyo = new greeter ('Gum');
 // code example for Explicit Binding
+
+const josh = {
+    name: 'Josh'
+}
+const perks = ['cleaning', 'bathing', 'farting']
+function words (perk1, perk2, perk3){
+    console.log(`Hey There! My name is ${this.name} and if you would like to hire me, please know that i am obsessed with ${perk1} as well as ${perk2} but my all time favorite thing to be obsessed with is ${perk3}`)
+}
+words.call(josh, perks)
