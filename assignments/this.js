@@ -27,17 +27,17 @@ const People = {
 People.sayHi('Professor K');
 
 // code example for New Binding
-// function JetSet (greeter){
-//     this.prepare = 'Yo! Are. You. Ready';
-//     this.greeter = greeter;
-//     this.speak = function(){
-//         console.log(this.prepare + this.greeter);
-//         console.log(this);
-//     }
-// };
-// const gum = new greeter ('Yo-Yo');
-// const yoyo = new greeter ('Gum');
-// code example for Explicit Binding
+function JetSet (greeter){
+    this.prepare = 'Yo! Are. You. Ready';
+    this.greeter = greeter;
+    this.speak = function(){
+        console.log(this.prepare + this.greeter);
+        console.log(this);
+    }
+};
+const gum = new greeter ('Yo-Yo');
+const yoyo = new greeter ('Gum');
+//code example for Explicit Binding
 
 const josh = {
     name: 'Josh'
