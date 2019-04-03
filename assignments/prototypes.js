@@ -16,10 +16,9 @@
   * destroy() // prototype method that returns: `${this.name} was removed from the game.`
 */
 function GameObject (name) {
-  this.createdAt = 3/2/2019,
+  this.createdAt = createdAt,
   this.name = 'Bruce',
-  this.dimensions = dimensions,
-  this.destroy
+  this.dimensions = dimensions
 }
 GameObject.prototype.destroy = function(){
   console.log(`${this.name} was removed from the game.`)
