@@ -32,9 +32,8 @@ GameObject.prototype.destroy = function(){
 function CharacterStats (healthPoints){
 this.healthPoints = healthPoints
 }
-CharacterStats.prototype.takeDamage{
-  return 
-}
+CharacterStats.prototype.takeDamage= function() 
+  return `${this.name} took damage.`
 /*
   === Humanoid (Having an appearance or character resembling that of a human.) ===
   * team
@@ -48,7 +47,7 @@ CharacterStats.prototype.takeDamage{
    this.team= name,
    this.weapons= weapons,
    this.language= language
- }
+   this.greet= 
  Humanoid.prototype.greet()= function(){
    return `${this.name} offers a greeting in ${this.language}.`
  }
