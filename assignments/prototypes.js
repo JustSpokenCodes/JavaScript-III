@@ -21,7 +21,7 @@ function GameObject (createdAt, name, dimensions) {
   this.dimensions = dimensions
 }
 GameObject.prototype.destroy = function(){
-  console.log(`${this.name} was removed from the game.`)
+  return (`${this.name} was removed from the game.`)
 }
 /*
   === CharacterStats ===
